@@ -6,11 +6,11 @@
         "symfony/var-dumper": "^7.0"
     },
     "autoload": {
-        "files": [
-            "app/helpers/helpers.php"
-        ],
         "psr-4": {
             "app\\":"app"
-        }
+        },
+        "files": [
+          "app/helpers/helpers.php"
+        ]
     }
 }

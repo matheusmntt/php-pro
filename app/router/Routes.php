@@ -13,7 +13,9 @@ class Routes
         '/product/[a-z]+/category/[a-z]+' => 'ProductController@show',
         '/register' => 'RegisterController@index',
       ],
-      'post' => []
+      'post' => [
+        '/user/update/[0-9]+' => 'UserController@update'
+      ]
     ];
   }
 }

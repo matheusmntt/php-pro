@@ -2,14 +2,18 @@
 
 namespace app\controllers;
 
-use League\Plates\Engine;
+use app\core\Request;
 
-class UserController
+class UserController extends Controller
 {
   public function edit($params)
-  {
-    $templates = new Engine('../app/views');
+  { 
+    $this->view('user', ['title' => 'Editar user']);
+  }
 
-    echo $templates->render('user', ['name' => 'Matheus']);
+  public function update($params)
+  {
+    $res = Request::only(['lastName', 'password']);
+    dd($res);
   }
 }
