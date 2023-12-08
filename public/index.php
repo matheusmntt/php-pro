@@ -2,6 +2,6 @@
 
 use app\core\Router;
 
-require('bootstrap.php');
+require './bootstrap.php';
  
 Router::run();
